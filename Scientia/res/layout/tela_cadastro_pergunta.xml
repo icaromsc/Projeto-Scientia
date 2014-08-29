@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.Scientia.MainActivity" >
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="salvar pergunta" />
+
+        <EditText
+            android:id="@+id/edtEnunciado"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="digite o enunciado da pergunta" />
+
+        <EditText
+            android:id="@+id/edtRincorreta4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btCadastrar"
+            android:layout_alignLeft="@+id/edtRcorreta"
+            android:ems="10"
+            android:hint="incorreta" />
+
+        <EditText
+            android:id="@+id/edtRincorreta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtRincorreta4"
+            android:layout_alignLeft="@+id/edtRincorreta4"
+            android:ems="10"
+            android:hint="incorreta" />
+
+        <EditText
+            android:id="@+id/edtRincoreta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtRincorreta3"
+            android:layout_alignLeft="@+id/edtRincorreta3"
+            android:ems="10"
+            android:hint="incorreta" />
+
+        <EditText
+            android:id="@+id/edtRcorreta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtRincoreta2"
+            android:layout_alignLeft="@+id/edtEnunciado"
+            android:ems="10"
+            android:hint="resposta correta"
+            />
+
+</RelativeLayout>
